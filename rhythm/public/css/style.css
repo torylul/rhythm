@@ -1,0 +1,536 @@
+* {
+    font-family: Verdana;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    background: black;
+    -webkit-box-shadow: 5px 5px 5px -5px #ff0090 inset;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba(255, 0, 144, 0.5);
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background-color: black;
+}
+
+/*#A80000
+rgba(128, 0, 0, 0.8);*/
+
+.body {
+    color: white;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.admin_body {
+    color: white;
+    min-height: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+/*НАВИГАЦИЯ*/
+
+.btn_record {
+    width: 200px;
+}
+
+nav a, .collapse a, footer a {
+    color: white;
+}
+
+.collapse a:hover, nav a:hover, footer a:hover, .p_footer a:hover {
+    text-decoration: underline 2px #ff0090;
+    text-underline-offset: 10px;
+    color: #ff0090;
+}
+
+.collapse button:hover {
+    color: #ff0090;
+    border: 2px solid #ff0090;
+}
+
+.btn_record_aure {
+    width: 150px;
+}
+
+.btn_record_aure a {
+    color: black;
+    text-decoration: none;
+}
+
+.btn_record_aure a:hover {
+    text-decoration: none;
+}
+
+.btn_record_aure:hover {
+    border: 2px solid #ff0090;
+}
+
+/*ПОДВАЛ*/
+
+.p_footer {
+    text-align: left;
+}
+
+.p_footer a {
+    color: white;
+}
+
+/*ПЕРВЫЙ БЛОК*/
+
+.main_start_block {
+    background-blend-mode: multiply;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text_main_start_block {
+    padding: 20px 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    text-align: center;
+    text-stroke: #ff0090;
+}
+
+.h4_main_start_block {
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    color: white;
+    letter-spacing: 5px;
+}
+
+.h1_main_start_block {
+    text-shadow: 0 0 5px #ff0090;
+    letter-spacing: 28px;
+    font-size: 60px;
+    font-weight: 700;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+}
+
+.p_plus_block {
+    font-size: 18px;
+    text-align:center;
+}
+
+.about_block {
+    box-shadow: 0 0 20px #ff0090;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: justify;
+}
+
+/*МОДАЛЬНОЕ ОКНО*/
+
+.modal_window_main {
+    box-shadow: 0px 0px 20px #ff0090;
+}
+
+.modal_window {
+    background-color: black;
+    color: white;
+}
+
+.modal_window_button a {
+    color: black;
+}
+
+.modal_window_button a:hover {
+    color: #ff0090;
+    border: 2px solid #ff0090;
+}
+
+.modal_window_close {
+    width: 150px;
+    text-align: center;
+    padding: 2px 5px;
+    border-radius: 10px;
+    color: white;
+    background: black;
+    border: 2px solid #ff0090;
+}
+
+/*КОМАНДА*/
+
+.h1_coach_block, .profile_h {
+    text-align: center;
+    font-family: Impact;
+    padding: 0 5px;
+}
+
+.span_coach_block, .span_profile {
+    color: #ff0090;
+    font-weight: 700;
+}
+
+.p_coach_block {
+    text-align: center;
+    padding: 0 5px;
+}
+
+.coach_block_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.coach_card {
+    width: 300px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px #ff0090;
+}
+
+.coach_card:hover, .hall_card:hover, .about_block:hover {
+    box-shadow: 0px 0px 30px #ff0090;
+}
+
+.img_coach_card {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin: 0 auto;
+    display: block;
+}
+
+.info_coach_card {
+    text-align: center;
+}
+
+.name_coach_card {
+    text-decoration: underline 2px rgba(255, 0, 144, 0.8);
+    text-underline-offset: 10px;
+}
+
+.email_coach_card {
+    font-size: 14px;
+}
+
+.button_card:hover {
+    box-shadow: 0px 0px 20px #ff0090;
+}
+
+.button_block_card {
+    text-align: center;
+}
+
+.button_card a {
+    color: white;
+    text-decoration: none;
+}
+
+/*РАСПИСАНИЕ*/
+
+.shadule_block_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+
+.shadule_card a, .shadule_card a:visited, .shadule_card a:link, .shadule_card a:active {
+    text-decoration: none;
+    color: white;
+}
+
+.shadule_card a:hover {
+    color: #ff0090;
+}
+
+.shadule_card {
+    width: 150px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px #ff0090;
+    text-align: center;
+}
+
+.day_shadule {
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: underline 2px rgba(255, 0, 144, 0.8);
+    text-underline-offset: 10px;
+}
+
+.info_shadule_card:hover {
+    cursor: pointer;
+}
+
+.time_shadule_card {
+
+}
+
+.hall_shadule_card {
+    font-size: 14px;
+}
+
+/*ПОДРОБНЕЕ О ТРЕНЕРЕ*/
+
+.coach_block_cards_more {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    align-items: center;
+}
+
+.coach_card_more {
+    width: 600px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px #ff0090;
+}
+
+.img_coach_card_more {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin: 0 auto;
+    display: block;
+}
+
+.coach_span {
+    font-weight: 700;
+}
+
+.description_coach_card {
+    text-align: justify;
+}
+
+.h2_coach_card_more {
+    text-align: center;
+    text-shadow: 0 0 5px #ff0090;
+}
+
+.email_coach_card_more {
+    font-size: 14px;
+    text-align: center;
+}
+
+/*ЗАЛЫ*/
+
+.hall_card {
+    width: 400px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px #ff0090;
+}
+
+.img_hall_card {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin: 0 auto;
+    display: block;
+}
+
+.name_hall_card {
+    text-decoration: underline 2px rgba(255, 0, 144, 0.8);
+    text-underline-offset: 10px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.description_hall_card {
+    text-align: justify;
+}
+
+/*ПРАЙС*/
+
+.name_ticket_card {
+    text-decoration: underline 2px rgba(255, 0, 144, 0.8);
+    text-underline-offset: 10px;
+    font-size: 20px;
+}
+
+.price_ticket_card {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+/*FAQ*/
+
+.accordion_button {
+    background-color: #141414;
+    border: none;
+    color: white;
+}
+
+.accordion_button:hover {
+    color: #ff0090;
+}
+
+.accordion_description {
+    text-align: justify;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.accordion_item {
+    border-bottom: 1px solid white;
+}
+
+/*ЛИЧНЫЙ КАБИНЕТ*/
+
+/*.table_profile th, tr {*/
+/*    color: white;*/
+/*}*/
+
+/*АВТОРИЗАЦИЯ И РЕГИСТРАЦИЯ*/
+
+.btn_record_ar {
+    width: 200px;
+}
+
+.div_auth_reg {
+    display: flex;
+    align-items: center;
+    background: url('../images/background.png') no-repeat center/cover;
+}
+
+.div_a_r {
+    position: relative;
+    width: 400px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.div_a_r .form_auth_reg {
+    width: 100%;
+    padding: 0 40px 40px;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #ff0090;
+    margin: 30px 0;
+}
+
+.input-box label {
+    position:absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    transition: .5s;
+    pointer-events: none;
+    font-weight: 700;
+}
+
+.input-box input ~ label,
+.input-box select ~ label {
+    top: -5px;
+}
+
+.input-box input,
+.input-box select {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+}
+
+.input-box select option {
+    background-color: black;
+}
+
+.btn_a_r {
+    width: 100%;
+}
+
+.h1_a_r {
+    text-align: center;
+    font-family: Impact;
+    padding: 0 5px;
+}
+
+/*АДМИН ПАНЕЛЬ*/
+
+.h_admin {
+    color: #5e5e5e;
+}
+
+.div_table {
+    background-color: white;
+    color: black;
+}
+
+.image_section {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+@media screen and (min-width:500px) and (max-width:1980px) {
+    .div_admin {
+        width: 75%;
+    }
+}
+
+@media screen and (min-width:200px) and (max-width:600px) {
+    .h1_coach_block {
+        font-size: 24px;
+    }
+
+    .h1_main_start_block {
+        font-size: 40px;
+    }
+
+    .accordion-header {
+        font-size: 20px;
+    }
+
+    .img_hall_card {
+        width: 300px;
+        height: 300px;
+    }
+
+    .coach_card_more {
+        width: 400px;
+    }
+
+    .img_coach_card_more {
+        width: 200px;
+        height: 200px;
+    }
+
+    .coach_span {
+        font-weight: 700;
+    }
+
+    .div_admin {
+        width: 100%;
+    }
+}
